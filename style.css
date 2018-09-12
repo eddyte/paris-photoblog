@@ -52,7 +52,7 @@ html {
 }
 body {
   	height: 100%;
-	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	font-family: Helvetica,Arial,sans-serif;
 	font-size: 0.875rem;
 	line-height: 1.65;
 	color: #616161;
@@ -135,7 +135,7 @@ img {
 
 .site-title {
   margin: 0;
-  font-family: "Playfair Display",Georgia;
+  font-family: Georgia;
   font-weight: 400;
   font-size: 3rem;
   font-style:italic;
@@ -167,6 +167,9 @@ img {
 #sidebar-column-search {
     padding-top: 10px;
 }
+#sidebar-column-newsletter {
+	padding-top: 30px;
+}
 #sidebar-column-search .input-group {
     margin: auto;
     max-width: 40%;
@@ -179,7 +182,20 @@ img {
     color: #AFAFAF;
     text-align: center;
     font-style: italic;
-    font-size: 0.813rem;
+		font-size: 0.813rem;
+}
+
+#sidebar-column-newsletter .form-control {
+	height: auto;
+	padding: 2px 12px;
+	background-color: rgba(0,0,0,0.35);
+	border-color: #6b6b6b;
+	color: #AFAFAF;
+	text-align: center;
+	font-style: italic;
+	font-size: 0.813rem;
+	max-width: 90%;
+
 }
 
 /*--------------------------------------------------------
@@ -208,7 +224,7 @@ img {
 .primary-navigation li,
 .site-navigation li {
   margin-bottom: 6px;
-  font-family: "Open Sans",sans-serif;
+  font-family: sans-serif;
   font-weight: 300;
   font-size: 1.438rem;
   line-height: 1.4;
@@ -596,6 +612,30 @@ a.post-thumbnail:focus {
 .search-results .page-header {
   text-align: center;
 }
+#search-bar {
+	padding-top: 3px;
+	padding-right: 0;
+    padding-left: 0;
+}
+
+#search-bar .form-group {
+	margin: auto;
+	max-width: 40%;
+	float: right;
+    padding-top: 3px;
+}
+#search-bar .form-control {
+	height: auto;
+	padding: 2px 12px;
+	background-color: rgba(0,0,0,0.35);
+	border-color: #6b6b6b;
+	color: #eae8e1;
+	text-align: center;
+	font-style: italic;
+	font-size: 0.813rem;
+}
+
+
 
 /*--------------------------------------------------------
 6.1 Blog Grid Style
@@ -750,7 +790,7 @@ h4,
 h5,
 h6,
 .entry-title a {
-	font-family: "Playfair Display", sans-serif;
+	font-family: sans-serif;
 	color: #424242;
 	font-weight: 400;
 	line-height: 1.2;
