@@ -544,6 +544,22 @@ img {
 .comment-meta:last-child:after {
  	display: none;
 }
+.gris {
+  color: gray;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.gris span {
+  font-family: FontAwesome;
+  font-size: 5rem;
+  color: #B6B6B6;
+  line-height: 0;
+  letter-spacing: -10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
 .site .avatar {
   	border-radius: 50%;
 }
@@ -635,7 +651,38 @@ a.post-thumbnail:focus {
 	font-size: 0.813rem;
 }
 
+.container-fluid {
+  margin-left: 3%;
+  margin-right: 3%;
+}
 
+.scc {
+	height: 36px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.partage1 img {
+  width: 30px;
+}
+
+.partage2 img {
+  width: 40px;
+}
+
+.partage1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag {
+  margin-left: 1%;
+}
+
+.tag p a {
+  text-decoration: none;
+}
 
 /*--------------------------------------------------------
 6.1 Blog Grid Style
@@ -1423,6 +1470,17 @@ ul.comment-list{
 	width: 100%;
 }
 
+
+.card-block {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.card-body img {
+  border-radius: 50%;
+  width: 50px;
+}
+
 /*--------------------------------------------------------
 15.0 Pagination
 --------------------------------------------------------*/
@@ -1911,6 +1969,11 @@ input[type="reset"]:hover {
 }
 .btn-group > .btn:first-child {
   margin-left: 0;
+}
+.form-check-input {
+	position: relative;
+	margin-top: .3rem;
+	margin-left: -1.25rem;
 }
 .input-group {
   position: relative;
