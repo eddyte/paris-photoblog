@@ -152,6 +152,7 @@ img {
 .site-title + .social {
 	margin-top: 25px;
 }
+
 .site-description {
   font-family: "open sans", sans-serif;
   font-size: 1rem;
@@ -656,12 +657,32 @@ a.post-thumbnail:focus {
   margin-right: 3%;
 }
 
-#soc-menu {
+/* logo réseaux sociaux de partage */
+.sociale {
 	height: 36px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
+
+.sociale a {
+	display: block;
+	height: 30px;
+	position: relative;
+	width: 30px;
+	color: #969696;
+	text-align: center;
+	border-radius:50%;
+}
+
+.sociale a:before {
+	position: absolute;
+	left: 0;
+	right:0;
+	font-size: 1.25rem;
+  	line-height: 1.5;
+}
+
 .partage1 img {
   width: 30px;
 }
