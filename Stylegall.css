@@ -155,7 +155,7 @@ padding: 20px;
 .rotate div[class=polaroid]:hover{
   /*-webkit-transform: rotate(-15deg);
   transform: rotate(-15deg);*/
-  animation: masuperanimation 1.5s; 
+  animation: masuperanimation 0.5s; 
 
 }
  
