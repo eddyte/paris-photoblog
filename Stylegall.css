@@ -4,6 +4,13 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
+.home-icon {
+  border-radius: 10px;
+  width: 80px;
+  height : 80px;
+  margin: 20px 20px;
+}
+
 .search {
   width: 100%;
   position: absolute
@@ -155,8 +162,7 @@ padding: 20px;
 .rotate div[class=polaroid]:hover{
   /*-webkit-transform: rotate(-15deg);
   transform: rotate(-15deg);*/
-  animation: masuperanimation 0.5s; 
+  animation: masuperanimation 1.5s; 
 
 }
-
  
