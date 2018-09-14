@@ -9,20 +9,25 @@
 	<meta charset="UTF-8" />
 	<title>Gallerie</title>
 </head>
+<!--<body onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='..message perso .. '; return true;">
+*/-->
 
-<body onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='..message perso .. '; return true;">
+<body >
 	<div class="wrap">
-	   <div class="search">
-	      <input type="text" class="searchTerm" placeholder="Rechercher">
-	      <button type="submit" class="searchButton">
-	        <i class="fa fa-search"></i>
-	     </button>
-	   </div>
-	</div>
+		<div class="search">
+		   <input type="text" class="searchTerm" placeholder="Rechercher">
+		   <button type="submit" class="searchButton">
+			 <i class="fa fa-search"></i>
+		  </button>
+		</div>
+	 </div>
+
 
 	<div class="container">
-
-		 <div align="center" style="margin-bottom: -20px;">
+		<div>
+			<a><img class="home-icon" src="images/home.jpg"></a>
+		</div>
+		 <div align="center" style="margin-bottom: -20px; margin-top: 30px">
             <button class="btn btn-default filter-button active" data-filter="all">All</button>
             <button class="btn btn-default filter-button" data-filter="arc">Arc de Triomphe</button>
             <button class="btn btn-default filter-button" data-filter="louvre">Louvre</button>
@@ -34,10 +39,12 @@
             <button class="btn btn-default filter-button" data-filter="opera">Palais Garnier</button>
             <button class="btn btn-default filter-button" data-filter="sacre">Sacré Coeur</button>
             <button class="btn btn-default filter-button" data-filter="arche">Grande Arche</button>
-        </div>
+		</div>
+
+		
 		<div class="pola">
 			<div class="row">
-				<div class=" col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter arc">
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter arc">
 
 					<div class="polaroid"  >
 						<div class="crop">
@@ -48,7 +55,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter louvre">
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter louvre">
 					<div class="polaroid" >
 						<div class="crop">
 							<img src="images/louvre4mini.jpg">
@@ -58,7 +65,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col col-lg-3 col-md-4 col-xs-6 col-sm-6">
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6">
 
 					<div class="polaroid">
 						<div class="crop">
@@ -69,7 +76,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col col-lg-3 col-md-4 col-xs-6 col-sm-6">
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6">
 					<div class="polaroid">
 						<div class="crop">
 							<img src="images/Gallieramini.jpg">
@@ -80,7 +87,7 @@
 					</div>
 				</div>
 
-				<div class="col col-lg-3 col-md-4 col-xs-6 col-sm-6">
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6">
 					<div class="polaroid">
 						<div class="crop">
 							<img src="images/grandpalaisverrieremini.jpg">
@@ -90,7 +97,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col col-lg-3 col-md-4 col-xs-6 col-sm-6">
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6">
 					<div class="polaroid">
 						<div class="crop">
 							<img src="images/garniermini.jpeg">
@@ -100,7 +107,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col col-lg-3 col-md-4 col-xs-6 col-sm-6">
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6">
 					<div class="polaroid">
 						<div class="crop">
 							<img src="images/sacrecoeurmini.jpg">
@@ -110,7 +117,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col col-lg-3 col-md-4 col-xs-6 col-sm-6">
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6">
 					<div class="polaroid">
 						<div class="crop">
 							<img src="images/archedeladefensemini.jpg">
