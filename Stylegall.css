@@ -132,30 +132,4 @@ padding: 20px;
 {
     margin-bottom: 30px;
 }
-
-/* Rotation */
-.rotate {
-  /*-webkit-transition: all 0.5s ease;
-  transition: all 0.2s ease;*/
-}
- 
-
-@keyframes masuperanimation {
-  0% {
-      transform: rotate(-15deg);
-  }
-
-
-
-  100% {
-      transform: rotate(15deg);
-  }
-}
-
-.rotate div[class=polaroid]:hover{
-  /*-webkit-transform: rotate(-15deg);
-  transform: rotate(-15deg);*/
-  animation: masuperanimation 1.5s; 
-
-}
  
