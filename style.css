@@ -340,23 +340,6 @@ img {
 	content: "\f09e";
 }
 
-.social a[href*="codepen.io"]:before {
-	content: "\f1cb";
-}
-.social a[href*="deviantart.com"]:before {
-	content: "\f1bd";
-}
-.social a[href*="digg.com"]:before {
-	content: "\f1a6";
-}
-
-.social a[href*="dribbble.com"]:before {
-	content: "\f17d";
-}
-
-.social a[href*="dropbox.com"]:before {
-	content: "\f16b";
-}
 
 .social a[href*="facebook.com"]:before {
 	content: "\f09a";
@@ -374,32 +357,13 @@ img {
 	content: "\f0d5";
 }
 
-.social a[href*="github.com"]:before {
-	content: "\f09b";
-}
-
 .social a[href*="instagram.com"]:before {
 	content: "\f16d";
 }
 
-.social a[href*="linkedin.com"]:before {
-	content: "\f0e1";
-}
 
 .social a[href*="pinterest.com"]:before {
 	content: "\f231";
-}
-
-.social a[href*="getpocket.com"]:before {
-	content: "\f265";
-}
-
-.social a[href*="reddit.com"]:before {
-	content: "\f281";
-}
-
-.social a[href*="stumbleupon.com"]:before {
-	content: "\f1a4";
 }
 
 .social a[href*="tumblr.com"]:before {
@@ -409,16 +373,6 @@ img {
 .social a[href*="twitter.com"]:before {
 	content: "\f099";
 }
-
-.social a[href*="vimeo.com"]:before {
-	content: "\f27d";
-}
-
-.social a[href*="wordpress.com"]:before,
-.social a[href*="wordpress.org"]:before {
-	content: "\f19a";
-}
-
 .social a[href*="youtube.com"]:before {
 	content: "\f16a";
 }
@@ -426,22 +380,6 @@ img {
 .social a[href*="mailto:"]:before {
 	content: "\f0e0";
 }
-
-.social a[href*="spotify.com"]:before {
-	content: "\f1bc";
-}
-
-.social a[href*="twitch.tv"]:before {
-	content: "\f1e8";
-}
-.social a[href="xing.com"]:before {
-	content: "f168";
-}
-.social a[href*="vk.com"]:before {
-	content: "\f189";
-}
-
-
 
 
 /*--------------------------------------------------------
@@ -703,6 +641,11 @@ a.post-thumbnail:focus {
 
 .tag p a {
   text-decoration: none;
+}
+
+.post h1 {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /*--------------------------------------------------------
