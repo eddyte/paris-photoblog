@@ -582,9 +582,9 @@ a.post-thumbnail:focus {
 #search-bar .form-control {
 	height: auto;
 	padding: 2px 12px;
-	background-color: rgba(0,0,0,0.35);
+	background-color: rgba(236, 230, 230, 0.945);
 	border-color: #6b6b6b;
-	color: #eae8e1;
+	color: #424242;
 	text-align: center;
 	font-style: italic;
 	font-size: 0.813rem;
