@@ -26,6 +26,7 @@ body{
   border-radius: 5px;
   outline: none;
   color: #767577;
+  background-color: white;
 }
 
 .searchTerm:focus{
@@ -46,9 +47,15 @@ body{
   font-size: 20px;
 }
 
+.btn{
+  background-color: lightgrey;
+    color: black;
+
+}
+
 /*Resize the wrap to see the search bar change!*/
 .wrap{
-  width: 15%;
+  width: 33%;
   position: relative;
   top: 10%;
   left: 80%;
