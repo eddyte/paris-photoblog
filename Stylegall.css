@@ -3,6 +3,16 @@
 body{
   font-family: 'Open Sans', sans-serif;
   margin-top: 50px!important;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+ background-position: center center;
+}
+
+.home-icon {
+  border-radius: 10px;
+  width: 80px;
+  height : 80px;
+  margin: 20px 20px;
 }
 
 .home-icon {
@@ -19,22 +29,22 @@ body{
 
 .searchTerm {
   float: left;
-  width: 100%;
+  width: 80%;
   border: 3px solid #000000;
   padding: 5px;
   height: 36px;
   border-radius: 5px;
   outline: none;
   color: #767577;
+  background-color: white;
 }
 
 .searchTerm:focus{
   color: #000000;
 }
 
-.searchButton {
-  position: absolute;  
-  right: -10px;
+.searchButton { 
+  right: 30px;
   width: 40px;
   height: 36px;
   border: 1px solid #000000;
@@ -46,9 +56,15 @@ body{
   font-size: 20px;
 }
 
+.btn{
+  background-color: lightgrey;
+    color: black;
+
+}
+
 /*Resize the wrap to see the search bar change!*/
 .wrap{
-  width: 15%;
+  width: 33%;
   position: relative;
   top: 10%;
   left: 80%;
@@ -65,7 +81,7 @@ margin: 20px 20px;
 
 width: 215px;
 
-background: rgba(255, 255, 255, 0) none repeat scroll 0% 0%;
+background: rgba(255, 255, 255, 1.0) none repeat scroll 0% 0%;
 
 transform: rotate(0deg);
 
@@ -170,10 +186,20 @@ padding: 20px;
  /*--------------------------------------------------------
 5.1  Menu Footer
 --------------------------------------------------------*/
+footer{
+  color: white;
+  text-align: center
+}
+
 #footer-menu {
 	list-style: none;
 	margin: 80px 0 5px;
-	padding:0;
+  padding:0;
+}
+#footer-menu a {
+  color : white;
+  font-weight: bold;
+
 }
 #footer-menu li {
 	display: inline;
