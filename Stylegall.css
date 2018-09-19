@@ -180,8 +180,20 @@ padding: 20px;
   /*-webkit-transform: rotate(-15deg);
   transform: rotate(-15deg);*/
   animation: imageanimation 1.5s; 
-
 }
+
+.fa-twitter {
+  color: #2dcffc;
+}
+
+.fa-instagram {
+  color: #7257b2
+}
+
+.fa-pinterest {
+  color: #c61118;
+}
+
 
  /*--------------------------------------------------------
 5.1  Menu Footer
