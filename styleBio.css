@@ -1,6 +1,6 @@
 .card {
 
-	width:500px;
+	width: 500px;
 }
 
 .img-fluid {
@@ -11,7 +11,9 @@
 h4 {
 
 	text-align: center;
-	background-color: #e8ecf2;
+	background-color: #dae1ed;
+	box-shadow: 8px 8px 0px black;
+	font-style: italic;
     font-weight: bold;
 	margin-left: auto;
 	margin-right: auto;
@@ -20,26 +22,37 @@ h4 {
 	padding: 10px;
 }
 
-.card-text:hover {
 
-	border-left: 3px solid black;
-
-}
 
 .card-img-top {
 
 	height: 200px;
 	width: 200px;
 	margin-left: 150px;
+	border: 2px solid black;
+	box-shadow: 8px 8px 0px #e3e6ea;
+
 }
 
-.card-text {
 
-	text-align: justify;
-}
 
 .card-title {
 
 	font-weight: bold;
 }
+
+h5 {
+
+	text-align: center;
+}
+
+
+
+
+p {
+
+	text-align: justify;
+}
+
+
 

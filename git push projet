@@ -1,0 +1,107 @@
+lucieduplat@lucieduplat-X411UN:~$ git clone https://github.com/eddyte/paris-photoblog
+Clonage dans 'paris-photoblog'...
+remote: Counting objects: 83, done.
+remote: Compressing objects: 100% (72/72), done.
+remote: Total 83 (delta 11), reused 81 (delta 9), pack-reused 0
+Dépaquetage des objets: 100% (83/83), fait.
+lucieduplat@lucieduplat-X411UN:~$ cd paris-photoblog
+lucieduplat@lucieduplat-X411UN:~/paris-photoblog$ git status
+Sur la branche accueil
+Votre branche est à jour avec 'origin/accueil'.
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+
+	projet/
+
+aucune modification ajoutée à la validation mais des fichiers non suivis sont présents (utilisez "git add" pour les suivre)
+lucieduplat@lucieduplat-X411UN:~/paris-photoblog$ add .
+
+La commande « add » n'a pas été trouvée, voulez-vous dire :
+
+  commande « amd » du deb am-utils
+  commande « aid » du deb id-utils
+  commande « atd » du deb at
+  commande « ddd » du deb ddd
+  commande « adb » du deb adb
+  commande « tdd » du deb devtodo
+  commande « and » du deb and
+  commande « axd » du deb afnix
+  commande « adbd » du deb android-tools-adbd
+  commande « dad » du deb debian-dad
+  commande « pdd » du deb pdd
+  commande « dd » du deb coreutils
+  commande « ldd » du deb libc-bin
+  commande « ad » du deb netatalk
+
+Essayez : sudo apt install <nom du deb>
+
+lucieduplat@lucieduplat-X411UN:~/paris-photoblog$ git add . 
+lucieduplat@lucieduplat-X411UN:~/paris-photoblog$ git status
+Sur la branche accueil
+Votre branche est à jour avec 'origin/accueil'.
+
+Modifications qui seront validées :
+  (utilisez "git reset HEAD <fichier>..." pour désindexer)
+
+	nouveau fichier : projet/image/barby.png
+	nouveau fichier : projet/image/bio lucie
+	nouveau fichier : projet/image/eddy.png
+	nouveau fichier : projet/image/groupe.jpg
+	nouveau fichier : projet/image/keveens.png
+	nouveau fichier : projet/image/lucie.jpg
+	nouveau fichier : projet/image/meremangatar.png
+	nouveau fichier : projet/image/yves.png
+	nouveau fichier : projet/projet.html
+	nouveau fichier : projet/style.css
+
+lucieduplat@lucieduplat-X411UN:~/paris-photoblog$ git checkout -b bio
+A	projet/image/barby.png
+A	projet/image/bio lucie
+A	projet/image/eddy.png
+A	projet/image/groupe.jpg
+A	projet/image/keveens.png
+A	projet/image/lucie.jpg
+A	projet/image/meremangatar.png
+A	projet/image/yves.png
+A	projet/projet.html
+A	projet/style.css
+Basculement sur la nouvelle branche 'bio'
+lucieduplat@lucieduplat-X411UN:~/paris-photoblog$ git branch
+  accueil
+* bio
+lucieduplat@lucieduplat-X411UN:~/paris-photoblog$ git commit -m "la bio"
+[bio 118c8d1] la bio
+ 10 files changed, 152 insertions(+)
+ create mode 100644 projet/image/barby.png
+ create mode 100644 projet/image/bio lucie
+ create mode 100644 projet/image/eddy.png
+ create mode 100644 projet/image/groupe.jpg
+ create mode 100644 projet/image/keveens.png
+ create mode 100644 projet/image/lucie.jpg
+ create mode 100644 projet/image/meremangatar.png
+ create mode 100644 projet/image/yves.png
+ create mode 100644 projet/projet.html
+ create mode 100644 projet/style.css
+lucieduplat@lucieduplat-X411UN:~/paris-photoblog$ git push origin bio
+Username for 'https://github.com': lucieduplat
+Password for 'https://lucieduplat@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/eddyte/paris-photoblog/'
+lucieduplat@lucieduplat-X411UN:~/paris-photoblog$ git push origin bio
+Username for 'https://github.com': lucieduplat
+Password for 'https://lucieduplat@github.com': 
+Décompte des objets: 14, fait.
+Delta compression using up to 8 threads.
+Compression des objets: 100% (14/14), fait.
+Écriture des objets: 100% (14/14), 850.14 KiB | 22.37 MiB/s, fait.
+Total 14 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'bio' on GitHub by visiting:
+remote:      https://github.com/eddyte/paris-photoblog/pull/new/bio
+remote: 
+To https://github.com/eddyte/paris-photoblog
+ * [new branch]      bio -> bio
+lucieduplat@lucieduplat-X411UN:~/paris-photoblog$ 
+
