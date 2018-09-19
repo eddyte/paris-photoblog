@@ -1295,7 +1295,10 @@ p > video {
 
 #bottom-sidebar {
 
-  font-size: 0.813rem;
+	font-size: 0.813rem;
+	background-color: #f4f6f9;
+	padding-left: 12%;
+	margin: 0% -7% 0% -7%;
 }
 #bottom-sidebar h4 {
   font-size: 1.125rem;
