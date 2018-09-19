@@ -657,6 +657,37 @@ a.post-thumbnail:focus {
   justify-content: space-between;
   align-items: center;
 }
+.effet a {
+	position: relative;
+	top: 0;
+	box-shadow: 0 0 65px white inset, 0 0 20px #BEAE8C inset, 0 0 2px #816F47;
+	transition: all 0.3s ease-in;
+}
+.effet a:before {
+	content: ' ';
+	position: absolute;
+	bottom: -1px; left: 0;
+	width: 100%;
+	height: 6px;
+	background: #9b885e;
+	box-shadow: 0 0 5px #9b885e,0 0 5px #9b885e,0 0 5px #9b885e;
+	border-radius: 90px/20px;
+	z-index: -1;
+	transition: all 0.3s ease-in;
+}
+.effet a:hover,
+.effet a:focus {
+	top: -10px;
+}
+.effet a:hover:before,
+.effet a:focus:before {
+	bottom: -11px;
+	left: -3px;
+	width: 106%;
+	height: 4px;
+	background: #bcae8f;
+	box-shadow: 0 0 9px #bcae8f,0 0 9px #bcae8f,0 0 9px #bcae8f,0 0 9px #bcae8f,0 0 9px white;
+}
 
 .tag {
   margin-left: 1%;
