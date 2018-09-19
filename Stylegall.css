@@ -147,22 +147,45 @@ padding: 20px;
 }
  
 
-@keyframes masuperanimation {
+@keyframes imageanimation {
   0% {
-      transform: rotate(-15deg);
+      transform: rotate(-10deg);
   }
 
 
 
   100% {
-      transform: rotate(15deg);
+      transform: rotate(10deg);
   }
 }
 
 .rotate div[class=polaroid]:hover{
   /*-webkit-transform: rotate(-15deg);
   transform: rotate(-15deg);*/
-  animation: masuperanimation 1.5s; 
+  animation: imageanimation 1.5s; 
 
 }
- 
+
+ /*--------------------------------------------------------
+5.1  Menu Footer
+--------------------------------------------------------*/
+#footer-menu {
+	list-style: none;
+	margin: 80px 0 5px;
+	padding:0;
+}
+#footer-menu li {
+	display: inline;
+}
+#footer-menu li:after {
+    font-family: FontAwesome;
+    content: '\f111';
+	margin: 0px 0 0 5px;
+	font-size: 0.5rem;
+	display: inline-block;
+	vertical-align: middle;
+	color: #B6B6B6;
+}
+#footer-menu li:last-child:after {
+ 	display: none;
+}
