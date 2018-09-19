@@ -9,48 +9,48 @@
 	 crossorigin="anonymous">
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Gallerie</title>
 </head>
 <!--<body onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='..message perso .. '; return true;">
 */-->
 
-<body >
-	<div class="wrap">
-		<div class="search">
-		   <input type="text" class="searchTerm" placeholder="Rechercher">
-		   <button type="submit" class="searchButton">
-			 <i class="fa fa-search"></i>
-		  </button>
-		</div>
-	 </div>
-
-
+<body background ="https://upload.wikimedia.org/wikipedia/commons/6/6b/City_of_Paris_from_Tour_Montparnasse.jpg" >
 	<div class="container">
-		<div>
-			<a href="index.html"><img class="home-icon" src="images/home.jpg"></a>
+		<div class="row justify-content-md-center">
+			<div class="col col-lg-3">
+				<a href="index.html"><img class="home-icon" src="images/home.jpg"></a>
+			</div>
+	
+			<div class="center col-lg-6">
+				<button class="btn btn-default filter-button active" data-filter="all">All</button>
+				<button class="btn btn-default filter-button" data-filter="arc">Arc de Triomphe</button>
+				<button class="btn btn-default filter-button" data-filter="louvre">Louvre</button>
+				<button class="btn btn-default filter-button" data-filter="eiffel">Tour Eiffel</button>
+				<button class="btn btn-default filter-button" data-filter="galliera">Palais Galliera</button>
+				<button class="btn btn-default filter-button" data-filter="palais">Grand Palais</button>
+				<button class="btn btn-default filter-button" data-filter="opera">Palais Garnier</button>
+				<button class="btn btn-default filter-button" data-filter="sacre">Sacré Coeur</button>
+				<button class="btn btn-default filter-button" data-filter="arche">Grande Arche</button>
+			</div>
+			<div class="col col-lg-3">
+				<div class="search">
+					<input type="text" class="searchTerm" placeholder="Rechercher">
+					<button type="submit" class="searchButton">
+						<i class="fa fa-search"></i>
+					</button>
+				</div>
+			</div>
 		</div>
-		 <div align="center" style="margin-bottom: -20px; margin-top: 30px">
-            <button class="btn btn-default filter-button active" data-filter="all"><a>All</a></button>
-            <button class="btn btn-default filter-button" data-filter="arc"><a>Arc de Triomphe</a></button>
-            <button class="btn btn-default filter-button" data-filter="louvre">Louvre</button>
-            <button class="btn btn-default filter-button" data-filter="eiffel">Tour Eiffel</button>
-            <button class="btn btn-default filter-button" data-filter="galliera">Palais Galliera</button>
-    	</div>
-    	<div align="center">
-            <button class="btn btn-default filter-button" data-filter="palais">Grand Palais</button>
-            <button class="btn btn-default filter-button" data-filter="opera">Palais Garnier</button>
-            <button class="btn btn-default filter-button" data-filter="sacre">Sacré Coeur</button>
-            <button class="btn btn-default filter-button" data-filter="arche">Grande Arche</button>
-		</div>
-
 		
 		<div class="pola">
 			<div class="row">
 				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter arc">
-
-					<div class="polaroid"  >
+					<div class="polaroid">
 						<div class="crop">
-							<div><img src="images/arcdetriomphesoleilcouchantmini.jpg" ></div>
+							<a class="thumbnail" data-image-id="" data-toggle="modal" data-title="" data-image="images/triomphe8.jpg"
+							 data-target="#image-gallery"><img src="images/triomphe8mini.jpg"></a>
 						</div>
 						<div class="figcaption">
 							Arc de triomphe
@@ -58,85 +58,222 @@
 					</div>
 				</div>
 				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter louvre">
-					<div class="polaroid" >
+					<div class="polaroid">
 						<div class="crop">
-							<img src="images/louvre4mini.jpg">
+							<a class="thumbnail" data-image-id="" data-toggle="modal" data-title="" data-image="images/louvre2.jpg"
+							 data-target="#image-gallery"><img src="images/louvre2mini.jpg"></a>
 						</div>
 						<div class="figcaption">
 							Louvre
 						</div>
 					</div>
 				</div>
-				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6">
-
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter eiffel">
 					<div class="polaroid">
 						<div class="crop">
-							<img src="images/eiffelmini.jpg">
+							<a class="thumbnail" data-image-id="" data-toggle="modal" data-title="" data-image="images/toureiffel.jpg"
+							 data-target="#image-gallery"><img src="images/toureiffelmini.jpg"></a>
 						</div>
 						<div class="figcaption">
 							Tour Eiffel
 						</div>
 					</div>
 				</div>
-				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6">
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter arc">
+						<div class="polaroid">
+							<div class="crop">
+								<a class="thumbnail" data-image-id="" data-toggle="modal" data-title="" data-image="images/triomphe2.jpg"
+								 data-target="#image-gallery"><img src="images/triomphe2mini.jpg"></a>
+							</div>
+							<div class="figcaption">
+								Arc de triomphe
+							</div>
+						</div>
+					</div>
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter galliera">
 					<div class="polaroid">
 						<div class="crop">
-							<img src="images/Gallieramini.jpg">
+							<a class="thumbnail" data-image-id="" data-toggle="modal" data-title="" data-image="images/Galliera.jpg"
+							 data-target="#image-gallery"><img src="images/Gallieramini.jpg"></a>
 						</div>
 						<div class="figcaption">
 							Palais Galliera
 						</div>
 					</div>
 				</div>
-
-				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6">
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter arche">
+						<div class="polaroid">
+							<div class="crop">
+								<a class="thumbnail" data-image-id="" data-toggle="modal" data-title="" data-image="images/arche3.jpg" data-target="#image-gallery"><img
+									 src="images/arche3mini.jpg"></a>
+							</div>
+							<div class="figcaption">
+								Grande Arche
+							</div>
+						</div>
+					</div>
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter palais">
 					<div class="polaroid">
 						<div class="crop">
-							<img src="images/grandpalaisverrieremini.jpg">
+							<a class="thumbnail" data-image-id="" data-toggle="modal" data-title="" data-image="images/grdpalais5.jpg"
+							 data-target="#image-gallery"><img src="images/grdpalais5mini.jpg"></a>
 						</div>
 						<div class="figcaption">
-							Vèrriere 
+							Vèrriere
 						</div>
 					</div>
 				</div>
-				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6">
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter opera">
+						<div class="polaroid">
+							<div class="crop">
+								<a class="thumbnail" data-image-id="" data-toggle="modal" data-title="" data-image="images/garnier4.jpeg"
+								 data-target="#image-gallery"><img src="images/garnier4mini.jpeg"></a>
+							</div>
+							<div class="figcaption">
+								Palais Garnier
+							</div>
+						</div>
+				</div>
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter opera">
 					<div class="polaroid">
 						<div class="crop">
-							<img src="images/garniermini.jpeg">
+							<a class="thumbnail" data-image-id="" data-toggle="modal" data-title="" data-image="images/garnier5.jpg"
+							 data-target="#image-gallery"><img src="images/garnier5mini.jpg"></a>
 						</div>
 						<div class="figcaption">
 							Palais Garnier
 						</div>
 					</div>
 				</div>
-				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6">
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter sacre">
 					<div class="polaroid">
 						<div class="crop">
-							<img src="images/sacrecoeurmini.jpg">
+							<a class="thumbnail" data-image-id="" data-toggle="modal" data-title="" data-image="images/sacrecoeur0.jpg"
+							 data-target="#image-gallery"><img src="images/sacrecoeur0mini.jpg"></a>
 						</div>
 						<div class="figcaption">
-							Sacré Coeur 
+							Sacré Coeur
 						</div>
 					</div>
 				</div>
-				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6">
-					<div class="polaroid">
-						<div class="crop">
-							<img src="images/archedeladefensemini.jpg">
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter louvre">
+						<div class="polaroid">
+							<div class="crop">
+								<a class="thumbnail" data-image-id="" data-toggle="modal" data-title="" data-image="images/louvre3.jpg"
+								 data-target="#image-gallery"><img src="images/louvre3mini.jpg"></a>
+							</div>
+							<div class="figcaption">
+								Louvre
+							</div>
 						</div>
-						<div class="figcaption">
-							Grande Arche
+					</div>
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter galliera">
+						<div class="polaroid">
+							<div class="crop">
+								<a class="thumbnail" data-image-id="" data-toggle="modal" data-title="" data-image="images/galliera2.jpg"
+								 data-target="#image-gallery"><img src="images/galliera2mini.jpg"></a>
+							</div>
+							<div class="figcaption">
+								Palais Galliera
+							</div>
+						</div>
+					</div>
+					<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter eiffel">
+							<div class="polaroid">
+								<div class="crop">
+									<a class="thumbnail" data-image-id="" data-toggle="modal" data-title="" data-image="images/eiffel2.jpg"
+									 data-target="#image-gallery"><img src="images/eiffel2mini.jpg"></a>
+								</div>
+								<div class="figcaption">
+									Tour Eiffel
+								</div>
+							</div>
+						</div>
+				<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter sacre">
+						<div class="polaroid">
+							<div class="crop">
+								<a class="thumbnail" data-image-id="" data-toggle="modal" data-title="" data-image="images/sacrecoeur1.jpg"
+								 data-target="#image-gallery"><img src="images/sacrecoeur1mini.jpg"></a>
+							</div>
+							<div class="figcaption">
+								Sacré Coeur
+							</div>
+						</div>
+					</div>
+					<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter galliera">
+							<div class="polaroid">
+								<div class="crop">
+									<a class="thumbnail" data-image-id="" data-toggle="modal" data-title="" data-image="images/galliera7.jpg"
+									 data-target="#image-gallery"><img src="images/galliera7mini.jpg"></a>
+								</div>
+								<div class="figcaption">
+									Palais Galliera
+								</div>
+							</div>
+						</div>
+						<div class="rotate col col-lg-3 col-md-4 col-xs-6 col-sm-6 filter sacre">
+							<div class="polaroid">
+								<div class="crop">
+									<a class="thumbnail" data-image-id="" data-toggle="modal" data-title="" data-image="images/sacrecoeur5.jpeg"
+									 data-target="#image-gallery"><img src="images/sacrecoeur5mini.jpeg"></a>
+								</div>
+								<div class="figcaption">
+									Sacré Coeur
+								</div>
+							</div>
+						</div>	
+			
+				<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="image-gallery-title"></h4>
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<a href="post.html"><img id="image-gallery-image" class="img-responsive col-md-12" src=""></a>
+							</div>
+							<div class="modal-footer">
+								<a class="fb-ic mr-3"><i class="fa fa-lg fa-facebook"> </i></a>
+								<a class="tw-ic mr-3"><i class="fa fa-lg fa-twitter"> </i></a>
+								<a class="ins-ic mr-3"><i class="fa fa-lg fa-instagram"> </i></a>
+								<a class="pin-ic mr-3"><i class="fa fa-lg fa-pinterest"> </i></a>
+								<button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+								</button>
+		
+								<button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<footer>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+	
+		<nav id="footer-nav">
+			<ul id="footer-menu" class="menu">
+				<li id="menu-item-97" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97"><a href="#">Conditions
+						d'utilisation
+					</a></li>
+				<li id="menu-item-99" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99"><a href="#">Règles
+						de la protection de la vie privée
+					</a></li>
+				<li id="menu-item-98" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98"><a href="#">Licenses</a></li>
+				<li id="menu-item-100" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-100"><a href="#">Contactez-nous</a></li>
+			</ul>
+		</nav>
+	
+		<div class="site-info copyright">
+			Copyright &copy;
+			2018 Wildo Coda.&nbsp;Tous droits réservés. </div>
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 	<script type="text/javascript">
 $(document).ready(function(){
@@ -160,6 +297,102 @@ $(document).ready(function(){
     });
  
 });
+
+
+let modalId = $('#image-gallery');
+
+$(document)
+  .ready(function () {
+
+    loadGallery(true, 'a.thumbnail');
+
+    //This function disables buttons when needed
+    function disableButtons(counter_max, counter_current) {
+      $('#show-previous-image, #show-next-image')
+        .show();
+      if (counter_max === counter_current) {
+        $('#show-next-image')
+          .hide();
+      } else if (counter_current === 1) {
+        $('#show-previous-image')
+          .hide();
+      }
+    }
+
+    /**
+     *
+     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+     * @param setClickAttr  Sets the attribute for the click handler.
+     */
+
+    function loadGallery(setIDs, setClickAttr) {
+      let current_image,
+        selector,
+        counter = 0;
+
+      $('#show-next-image, #show-previous-image')
+        .click(function () {
+          if ($(this)
+            .attr('id') === 'show-previous-image') {
+            current_image--;
+          } else {
+            current_image++;
+          }
+
+          selector = $('[data-image-id="' + current_image + '"]');
+          updateGallery(selector);
+        });
+
+      function updateGallery(selector) {
+        let $sel = selector;
+        current_image = $sel.data('image-id');
+        $('#image-gallery-title')
+          .text($sel.data('title'));
+        $('#image-gallery-image')
+          .attr('src', $sel.data('image'));
+        disableButtons(counter, $sel.data('image-id'));
+      }
+
+      if (setIDs == true) {
+        $('[data-image-id]')
+          .each(function () {
+            counter++;
+            $(this)
+              .attr('data-image-id', counter);
+          });
+      }
+      $(setClickAttr)
+        .on('click', function () {
+          updateGallery($(this));
+        });
+    }
+  });
+
+// build key actions
+$(document)
+  .keydown(function (e) {
+    switch (e.which) {
+      case 37: // left
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+          $('#show-previous-image')
+            .click();
+        }
+        break;
+
+      case 39: // right
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+          $('#show-next-image')
+            .click();
+        }
+        break;
+
+      default:
+        return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+  });
+
+
 </script>
 	
 </body>
