@@ -2,6 +2,7 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
+  margin-top: 50px!important;
 }
 
 .home-icon {
@@ -13,8 +14,7 @@ body{
 
 .search {
   width: 100%;
-  position: absolute
-   
+  margin: 30px 10px;
 }
 
 .searchTerm {
@@ -110,7 +110,8 @@ padding: 20px;
     border-radius: 5px;
     text-align: center;
     color: #000000;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
+
  
 }
 .filter-button:hover
