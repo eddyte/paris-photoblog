@@ -9,17 +9,9 @@ body{
 }
 
 .home-icon {
-  border-radius: 10px;
-  width: 80px;
-  height : 80px;
   margin: 20px 20px;
-}
-
-.home-icon {
-  border-radius: 10px;
-  width: 80px;
-  height : 80px;
-  margin: 20px 20px;
+  width : 80px;
+	opacity: 0.9;
 }
 
 .search {
@@ -187,7 +179,7 @@ padding: 20px;
 }
 
 .fa-instagram {
-  color: #7257b2;
+  color: #7257b2
 }
 
 .fa-pinterest {

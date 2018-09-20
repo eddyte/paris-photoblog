@@ -135,6 +135,11 @@ img {
 .site-title + .social {
 	margin-top: 25px;
 }
+.site-title img {
+	width : 70px;
+	margin-bottom: 5%;
+	opacity: 0.6;
+}
 
 .site-description {
   font-family: "open sans", sans-serif;
