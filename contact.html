@@ -187,35 +187,36 @@
 
                     <div class="container">
                         <p>Contactez-moi en utilisant le formulaire ci-dessous :</p>
-                        <form>
+                        <form id="contact" method="POST" onsubmit="recup()" enctype="multipart/form-data">
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                 <label class="btn btn-secondary active">
-                                    <input type="radio" name="options" id="option1" autocomplete="off" checked>M
+                                    <input type="radio" name="option1" id="option1" autocomplete="off">M
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="options" id="option2" autocomplete="off">Mme
+                                    <input type="radio" name="option2" id="option2" autocomplete="off">Mme
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="options" id="option3" autocomplete="off">Autre
+                                    <input type="radio" name="option3" id="option3" autocomplete="off">Autre
                                 </label>
                             </div>
                             <div class="form-group">
                                 <label for="Nom">Votre nom</label>
-                                <input type="text" class="form-control" id="inputNom" aria-describedby="Nom" placeholder="Entrer votre nom">
+                                <input type="text" class="form-control" id="inputNom" name="nom" aria-describedby="Nom" placeholder="Entrer votre nom">
                             </div>
                             <div class="form-group">
                                 <label for="Email">Adresse mail</label>
-                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Entrer votre email">
+                                <input type="email" class="form-control" id="inputEmail" name="email" aria-describedby="emailHelp" placeholder="Entrer votre email">
                                 <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre email
                                     avec des tiers</small>
                             </div>
                             <div class="form-group">
                                 <label for="Message">Message</label>
-                                <textarea rows="10" class="form-control" id="inputMessage">Message</textarea>
+                                <textarea rows="10" class="form-control" id="inputMessage" name="Message">Message</textarea>
                             </div>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Je souhaite recevoir la newsletter</label>
+<!--                            <div class="form-group form-check"> -->
+                            <div class="form-group">
+                                <input type="checkbox" class="form-check-input" id="Check1" name="newsletter" unchecked>
+                                <label class="form-check-label" for="Check1">Je souhaite recevoir la newsletter</label>
                             </div>
                             <button type="submit" class="btn btn-primary">Envoyer</button>
                         </form>
@@ -252,13 +253,9 @@
     </div><!-- #page -->
 
 
-
-
-
-
     <!-- fonction JS pour le toggle buttons de la nav bar -->
     <script type='text/javascript' src='functions.js'></script>
-
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -267,8 +264,8 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-
-
+    <!-- fonction JS pour le traitement du formulaire -->
+    <script type='text/javascript' src='contact.js'></script>
 </body>
 
 </html>
