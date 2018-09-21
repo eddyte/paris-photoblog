@@ -612,7 +612,6 @@ a.post-thumbnail:focus {
 }
 
 .container-fluid{
-	margin-left: 3%;
   margin-right: 3%;
 	opacity: 0;
 	transform: translateX(80%);
